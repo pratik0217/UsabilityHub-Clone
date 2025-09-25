@@ -54,7 +54,13 @@ a {
 }
 
 /* Navbar  */
+.navbar-box {
+  display: flex;
+  justify-content: space-between;
+}
+
 .company-logo {
-    background-image: url();
-    background-size: 150px;
+  background-image: url("./assets/asset/ 0.png");
+  height: 150px;
+  width: 250px;
 }
