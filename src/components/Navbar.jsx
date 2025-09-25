@@ -1,20 +1,19 @@
 import { NavLink } from "react-router"
+// import usabilityLogo from './assets/asset\ 0.png'
 
 export function Navbar() {
     return (
         <>
-            <div className="navbar-box container">
-                <div className="company-logo">
-                    <p>CompanyLogo</p>
-                </div>
+            <div className="navbar-box container flex">
+                <div className="company-logo"></div>
                 <div className="navlinks">
-                    <nav>
-                        <NavLink to="/products">Products</NavLink>
-                        <NavLink to="/customers">Customers</NavLink>
-                        <NavLink to="/pricing">Pricing</NavLink>
-                        <NavLink to="/resources">Resources</NavLink>
-                        <NavLink to="/sign in">Sign in</NavLink>
-                        <NavLink to="/sign up">Sign up</NavLink>
+                    <nav className="flex">
+                        <NavLink className="active-link" to="/product">Product</NavLink>
+                        <NavLink className="active-link" to="/customers">Customers</NavLink>
+                        <NavLink className="active-link" to="/pricing">Pricing</NavLink>
+                        <NavLink className="active-link" to="/resources">Resources</NavLink>
+                        <NavLink className="active-link secondary-btn" to="/sign in">Sign in</NavLink>
+                        <NavLink className="active-link primary-btn" to="/sign up">Sign up</NavLink>
                     </nav>
                 </div>
             </div>
