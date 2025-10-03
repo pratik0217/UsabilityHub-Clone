@@ -115,7 +115,7 @@ nav {
 /* Header Section  */
 header {
   padding: 50 var(--padding-inline-section) 0;
-  margin-top: 75px;
+  margin-top: 100px;
 }
 
 .header-section {
@@ -144,11 +144,15 @@ header {
 }
 
 /* Companies section  */
+.companies-section {
+  margin-top: 80px;
+}
+
 .companies-heading {
   color: var(--second-text-color) !important;
   text-align: center;
-  padding: 50px;
-  margin-top: 25px;
+  padding: 40px;
+  /* margin-top: 25px; */
 }
 
 .companies-logos {
@@ -203,4 +207,74 @@ header {
   background-image: url(./assets/asset\ 8.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+/* Features-section  */
+#features-section {
+  padding: 150px var(--padding-inline-section) 0;
+}
+
+.features-heading {
+  text-align: center;
+}
+
+.features-heading h2 {
+  color: var(--primary-text-color) !important;
+  margin-bottom: 20px;
+}
+
+.features-area {
+  height: 550px;
+}
+
+.features-card-img1 {
+  height: 40px;
+  width: 60px;
+  background-image: url(./assets/asset\ 9.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.features-card-img2 {
+  height: 40px;
+  width: 60px;
+  background-image: url(./assets/asset\ 10.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.features-card-img3 {
+  height: 40px;
+  width: 60px;
+  background-image: url(./assets/asset\ 11.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.features-card-img4 {
+  height: 40px;
+  width: 60px;
+  background-image: url(./assets/asset\ 12.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.features-card-img5 {
+  height: 40px;
+  width: 60px;
+  background-image: url(./assets/asset\ 13.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.features-card-img6 {
+  height: 40px;
+  width: 60px;
+  background-image: url(./assets/asset\ 14.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.buttom-spacer {
+  height: 100vh;
 }

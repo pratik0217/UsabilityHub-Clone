@@ -1,5 +1,4 @@
 import { NavLink } from "react-router"
-// import usabilityLogo from './assets/asset\ 0.png'
 
 export function Navbar() {
     return (
