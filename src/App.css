@@ -212,6 +212,10 @@ header {
 /* Features-section  */
 #features-section {
   padding: 150px var(--padding-inline-section) 0;
+  background-image: url(./assets/asset\ 29.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vh;
 }
 
 .features-heading {
@@ -224,7 +228,20 @@ header {
 }
 
 .features-area {
+  margin-top: 20px;
+  justify-content: center;
   height: 550px;
+  flex-wrap: wrap;
+}
+
+.features-card {
+  flex-direction: column;
+  max-width: 30%;
+  gap: 10px;
+}
+
+.features-card p {
+  text-align: center;
 }
 
 .features-card-img1 {
@@ -273,6 +290,47 @@ header {
   background-image: url(./assets/asset\ 14.svg);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+/* Big features section */
+#big-features {
+  padding: 30px;
+}
+
+.big-features-container {
+  gap: 70px;
+  margin-top: 100px;
+}
+
+.features-img img {
+  width: 100%;
+}
+
+.features-descr {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+}
+
+.feature-descr-img img{
+  width: 50%;
+}
+
+.guoted-section {
+  background-image: url(./assets/asset\ 30.svg);
+  background-repeat: no-repeat;
+  width: 80%;
+  padding: 30px;
+}
+
+.human-img img {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.middle-big-features-container {
+  flex-direction: row-reverse;
 }
 
 .buttom-spacer {
