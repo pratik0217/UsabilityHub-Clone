@@ -66,13 +66,6 @@ a {
   justify-content: space-between;
 }
 
-.company-logo {
-  height: 46px;
-  width: 252px;
-  background-image: url(./assets/asset\ 0.png);
-  background-size: contain;
-}
-
 .navlinks {
   flex-basis: 647px;
 }
@@ -120,11 +113,11 @@ header {
 
 .header-section {
   justify-content: center;
-  gap: 50px;
+  gap: 10px;
 }
 
 .left-header {
-  width: 40vw;
+  width: 50vw;
 }
 
 .left-header p{
@@ -132,11 +125,8 @@ header {
 }
 
 
-.right-header {
-  background-image: url(./assets/asset\ 1.jpeg);
-  height: 425px;
-  width: 680px;
-  background-size: contain;
+.right-header img{
+  width: 100%;
 }
 
 .get-started-btn {
@@ -162,52 +152,13 @@ header {
 }
 
 .logos {
-  height: 50px;
-  width: 120px;
+  align-content: space-between;
 }
 
-.company-logo1 {
-  background-image: url(./assets/asset\ 2.png);
-  width: 100px !important;
-  background-size: contain;
-  background-repeat: no-repeat;
+.logo {
+  height: 46px;
 }
 
-.company-logo2 {
-  background-image: url(./assets/asset\ 3.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.company-logo3 {
-  background-image: url(./assets/asset\ 4.png);
-  width: 185px !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.company-logo4 {
-  background-image: url(./assets/asset\ 5.png);
-  width: 155px !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.company-logo5 {
-  background-image: url(./assets/asset\ 6.png);
-  width: 60px !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.company-logo6 {
-  background-image: url(./assets/asset\ 7.svg);
-  height: 34px;
-  width: 178px !important;
-  background-size: contain;
-}
-
-.company-logo7 {
-  background-image: url(./assets/asset\ 8.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 
 /* Features-section  */
 #features-section {
@@ -244,21 +195,11 @@ header {
   text-align: center;
 }
 
-.features-card-img1 {
+.features-card img{
   height: 40px;
   width: 60px;
-  background-image: url(./assets/asset\ 9.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
-.features-card-img2 {
-  height: 40px;
-  width: 60px;
-  background-image: url(./assets/asset\ 10.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 
 .features-card-img3 {
   height: 40px;
