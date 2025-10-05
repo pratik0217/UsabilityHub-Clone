@@ -8,6 +8,7 @@ import { Resources } from './components/Resources'
 import { Customers } from './components/Customers'
 // import {SignIn} from './components/SignIn'
 // import {SignUp} from './components/SignUp'
+import websiteLogo from "/src/homePageAssets/asset\ 0.png"
 import asset1 from "./homePageAssets/asset\ 1.jpeg"
 import asset2 from "./homePageAssets/asset\ 2.png"
 import asset3 from "./homePageAssets/asset\ 3.png"
@@ -30,6 +31,11 @@ import asset20 from "./homePageAssets/asset\ 20.png"
 import asset21 from "./homePageAssets/asset\ 21.png"
 import asset22 from "./homePageAssets/asset\ 22.png"
 import asset23 from "./homePageAssets/asset\ 23.png"
+import asset24 from "./homePageAssets/asset\ 24.png"
+import asset25 from "./homePageAssets/asset\ 25.png"
+import asset26 from "./homePageAssets/asset\ 26.png"
+import asset27 from "./homePageAssets/asset\ 27.png"
+import asset40 from "./homePageAssets/asset\ 40.png"
 
 
 function App() {
@@ -41,7 +47,7 @@ function App() {
       </div>
 
       <Routes>
-        <Route element={<Navbar />}>
+        <Route element={<Navbar logo={websiteLogo} />}>
           <Route path='/product' element={<Product />} />
           <Route path='/customers' element={<Customers />} />
           <Route path='/pricing' element={<Pricing />} />
@@ -174,7 +180,7 @@ function App() {
           </div>
         </div>
 
-        <div className="container flex big-features-container middle-big-features-container">
+        <div className="container flex big-features-container reverse-container">
           <div className='features-img'>
             <img src={asset20} alt="features-img" />
           </div>
@@ -245,10 +251,139 @@ function App() {
         </div>
       </section>
 
+      <section id='examples-section'>
+        <div className="container examples-section-container">
+          <div className="features-heading">
+            <h2>One platform, endless possibilities</h2>
+            <a className='secondary-btn'>See More examples <i className="fa-solid fa-arrow-right"></i></a>
+          </div>
 
-      <section>
-        <div className="buttom-spacer"></div>
+          <div className="examples-area flex">
+            <a href="#" className='example-card example-card-img1'>
+              <h4 className='example-card-text'>Can users complete task in my software interface?</h4>
+            </a>
+
+            <a href="#" className='example-card'>
+              <h4 className='example-card-text'>Can users find important pages on my website?</h4>
+            </a>
+
+            <a href="#" className='example-card'>
+              <h4 className='example-card-text'>is my website's intended audience clear?</h4>
+            </a>
+
+            <a href="#" className='example-card'>
+              <h4 className='example-card-text'>Do vistitors understand what a page is about?</h4>
+            </a>
+          </div>
+        </div>
       </section>
+
+      <section id='cta-section'>
+        <div className="container flex cta-section-container reverse-container">
+          <div className="cta-img">
+            <img src={asset40} alt="cta" />
+          </div>
+
+          <div className="cta-description flex">
+            <h2>No participants? No problem.</h2>
+            <p>Our integrated panel allows you to quickly and affordably recruit research participants that precisely match your target audience.</p>
+
+            <h3>Our panel includes:</h3>
+
+            <div className="cta-descr-lists flex">
+              <div className="cta-descr">
+                <li>530k+ panel participants</li>
+                <li>35+ demographic options</li>
+                <li>Free demographic testing</li>
+              </div>
+
+              <div className="cta-descr">
+                <li>Coverage in 100+ countries</li>
+                <li>Average 2hr turn around time</li>
+                <li>Response quality guarantee</li>
+              </div>
+            </div>
+
+            <div className="cta-buttom-section flex">
+              <a href="#" className='primary-btn'>Try the panel calculator</a>
+              <p>Or</p>
+              <a href="#" className='secondary-white-btn'>Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id='cta-panel'>
+        <div className="container">
+          <div className="cta-panel-container flex">
+            <h3>Start testing today</h3>
+            <p>Take the guesswork out of design decisions</p>
+            <a className='primary-btn'>Get Started</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div className="container flex footer-container">
+          {/* <div className="websiteLogo"> */}
+            <img className='websiteLogo' src={websiteLogo} alt="" />
+          {/* </div> */}
+
+          <div className="footer-heading-list flex">
+              <h3>Product</h3>
+
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Research panel</a>
+              <a href="#">Customers</a>
+              <a href="#">Status page</a>
+              <a href="#">Status page</a>
+              <a href="#">Sign up</a>
+              <a href="#">Book a demo</a>
+          </div>
+
+          <div className="footer-heading-list flex">
+              <h3>Card sorting</h3>
+
+              <a href="#">Prototype testing</a>
+              <a href="#">First click tests</a>
+              <a href="#">Preference tests</a>
+              <a href="#">Five second tests</a>
+              <a href="#">Design surveys</a>
+          </div>
+
+          <div className="footer-heading-list flex">
+              <h3>Resources</h3>
+
+              <a href="#">Blog</a>
+              <a href="#">Testing guides</a>
+              <a href="#">Help center</a>
+              <a href="#">Contact</a>
+              <a href="#">Careers</a>
+          </div>
+        </div>
+      </footer>
+
+      <footer id='subfooter-container'>
+        <div className="container flex subfooter">
+          <div className="terms flex">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Security information</a>
+          </div>
+
+          <div className="social-media flex">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+
+          <div className="copyright">
+            <p>&copy; pratikjadhav</p>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }

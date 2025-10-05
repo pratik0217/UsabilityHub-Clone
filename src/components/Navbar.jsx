@@ -1,12 +1,11 @@
 import { NavLink } from "react-router"
-import websiteLogo from "/src/homePageAssets/asset\ 0.png"
 
-export function Navbar() {
+export function Navbar(props) {
     return (
         <>
             <div className="navbar-box container flex">
                 <div className="company-logo">
-                    <img src={websiteLogo} alt="website logo" />
+                    <img src={props.logo} alt="website logo" />
                 </div>
                 <div className="navlinks">
                     <nav className="flex">
