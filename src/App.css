@@ -66,6 +66,7 @@ a {
 .navbar-box {
   margin-top: 15px;
   justify-content: space-between;
+  position: relative;
 }
 
 .company-logo img {

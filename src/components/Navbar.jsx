@@ -1,14 +1,19 @@
+import { useState } from "react"
 import { NavLink } from "react-router"
-// import './index.css'
 
 export default function Navbar(props) {
+    const [showMenu, setShowMenu] = useState(false);
+
+    const handleToggleButtom = () => {
+        setShowMenu(!showMenu);
+    }
     return (
         <>
             <div className="navbar-box container flex">
                 <div className="company-logo">
                     <img src={props.logo} alt="website logo" />
                 </div>
-                <div className="navlinks">
+                <div className="navlinks" id={showMenu ? "menu-mobile" : "menu-web"}>
                     <nav className="flex">
                         <NavLink className="active-link" to="/product">Product</NavLink>
                         <NavLink className="active-link" to="/customers">Customers</NavLink>
@@ -19,7 +24,7 @@ export default function Navbar(props) {
                     </nav>
                 </div>
                 <div className="nav-toggle">
-                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#"><i className="fa-solid fa-bars"></i></a>
                 </div>
             </div>
         </>
