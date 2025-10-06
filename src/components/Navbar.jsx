@@ -1,4 +1,5 @@
 import { NavLink } from "react-router"
+// import './index.css'
 
 export default function Navbar(props) {
     return (
@@ -16,6 +17,9 @@ export default function Navbar(props) {
                         <NavLink className="active-link secondary-btn" to="/sign in">Sign in</NavLink>
                         <NavLink className="active-link primary-btn" to="/sign up">Sign up</NavLink>
                     </nav>
+                </div>
+                <div className="nav-toggle">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
                 </div>
             </div>
         </>

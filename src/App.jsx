@@ -1,5 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router'
 import './App.css'
+import './media-queries.css'
 import { TopBanner } from './components/TopBanner'
 import Navbar from './components/Navbar'
 import Product from './components/Product'
@@ -36,6 +37,7 @@ import PageNotFound from './components/PageNotFound'
 
 
 function App() {
+  const alertMessage = alert("Does't work it clicked Click.")
   return (
     <>
       {/* Top Banner Section  */}
@@ -44,7 +46,7 @@ function App() {
       </div>
 
       <Routes>
-        <Route path='/' element={<Navbar logo={websiteLogo} />}>
+        <Route path='/' element={<Navbar alertPop={alertMessage} logo={websiteLogo} />}>
           <Route path='/product' element={<Product />} />
           <Route path='/customers' element={<Customers />} />
           <Route path='/pricing' element={<Pricing />} />
@@ -66,7 +68,7 @@ function App() {
           </div>
 
           <div className="right-header">
-            <img src={asset1} alt="" />
+            <img src={asset1} alt="asset1" />
           </div>
         </div>
       </header>
@@ -251,7 +253,7 @@ function App() {
 
       <section id='examples-section'>
         <div className="container examples-section-container">
-          <div className="features-heading">
+          <div className="features-heading example-heading-container">
             <h2>One platform, endless possibilities</h2>
             <a className='secondary-btn'>See More examples <i className="fa-solid fa-arrow-right"></i></a>
           </div>
@@ -283,7 +285,8 @@ function App() {
           </div>
 
           <div className="cta-description flex">
-            <h2>No participants? No problem.</h2>
+            <h2>No participants?</h2>
+            <h2>No problem.</h2>
             <p>Our integrated panel allows you to quickly and affordably recruit research participants that precisely match your target audience.</p>
 
             <h3>Our panel includes:</h3>
@@ -323,9 +326,7 @@ function App() {
 
       <footer>
         <div className="container flex footer-container">
-          {/* <div className="websiteLogo"> */}
-          <img className='websiteLogo' src={websiteLogo} alt="" />
-          {/* </div> */}
+          <img className='websiteLogo' src={websiteLogo} alt="website logo" />
 
           <div className="footer-heading-list flex">
             <h3>Product</h3>

@@ -1,15 +1,26 @@
 /* Poppins font use for heading  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 /* Roboto font use for paragraph */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--primpary-text-color);
+  font-family: "Poppins", sans-serif;
+  color: var(--primpary-text-color);
 }
+
+/* @media screen and (max-width: 991px) {
+  .navlinks {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin-right: 20px;
+  }
+} */
