@@ -1,6 +1,6 @@
 import { NavLink } from "react-router"
 
-export function Navbar(props) {
+export default function Navbar(props) {
     return (
         <>
             <div className="navbar-box container flex">

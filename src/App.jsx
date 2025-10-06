@@ -1,13 +1,13 @@
-import { Route, Routes } from 'react-router'
+import { Route, Routes, Navigate } from 'react-router'
 import './App.css'
-import { Navbar } from './components/Navbar'
 import { TopBanner } from './components/TopBanner'
-import { Product } from "./components/Product"
-import { Pricing } from './components/Pricing'
-import { Resources } from './components/Resources'
-import { Customers } from './components/Customers'
-// import {SignIn} from './components/SignIn'
-// import {SignUp} from './components/SignUp'
+import Navbar from './components/Navbar'
+import Product from './components/Product'
+import Customers from './components/Customers'
+import Pricing from './components/Pricing'
+import Resources from './components/Resources'
+import SignIn from './components/SignIn'
+import SignUp from './components/SignUp'
 import websiteLogo from "/src/homePageAssets/asset\ 0.png"
 import asset1 from "./homePageAssets/asset\ 1.jpeg"
 import asset2 from "./homePageAssets/asset\ 2.png"
@@ -31,11 +31,8 @@ import asset20 from "./homePageAssets/asset\ 20.png"
 import asset21 from "./homePageAssets/asset\ 21.png"
 import asset22 from "./homePageAssets/asset\ 22.png"
 import asset23 from "./homePageAssets/asset\ 23.png"
-import asset24 from "./homePageAssets/asset\ 24.png"
-import asset25 from "./homePageAssets/asset\ 25.png"
-import asset26 from "./homePageAssets/asset\ 26.png"
-import asset27 from "./homePageAssets/asset\ 27.png"
 import asset40 from "./homePageAssets/asset\ 40.png"
+import PageNotFound from './components/PageNotFound'
 
 
 function App() {
@@ -47,13 +44,14 @@ function App() {
       </div>
 
       <Routes>
-        <Route element={<Navbar logo={websiteLogo} />}>
+        <Route path='/' element={<Navbar logo={websiteLogo} />}>
           <Route path='/product' element={<Product />} />
           <Route path='/customers' element={<Customers />} />
           <Route path='/pricing' element={<Pricing />} />
           <Route path='/resources' element={<Resources />} />
-          <Route path='/sign in' element="#" />
-          <Route path='/sign up' element="#" />
+          <Route path='/sign in' element={<SignIn />} />
+          <Route path='/sign up' element={<SignUp />} />
+          <Route path='/*' element={<PageNotFound/>} />
         </Route>
       </Routes>
 
@@ -326,40 +324,40 @@ function App() {
       <footer>
         <div className="container flex footer-container">
           {/* <div className="websiteLogo"> */}
-            <img className='websiteLogo' src={websiteLogo} alt="" />
+          <img className='websiteLogo' src={websiteLogo} alt="" />
           {/* </div> */}
 
           <div className="footer-heading-list flex">
-              <h3>Product</h3>
+            <h3>Product</h3>
 
-              <a href="#">Overview</a>
-              <a href="#">Pricing</a>
-              <a href="#">Research panel</a>
-              <a href="#">Customers</a>
-              <a href="#">Status page</a>
-              <a href="#">Status page</a>
-              <a href="#">Sign up</a>
-              <a href="#">Book a demo</a>
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Research panel</a>
+            <a href="#">Customers</a>
+            <a href="#">Status page</a>
+            <a href="#">Status page</a>
+            <a href="#">Sign up</a>
+            <a href="#">Book a demo</a>
           </div>
 
           <div className="footer-heading-list flex">
-              <h3>Card sorting</h3>
+            <h3>Card sorting</h3>
 
-              <a href="#">Prototype testing</a>
-              <a href="#">First click tests</a>
-              <a href="#">Preference tests</a>
-              <a href="#">Five second tests</a>
-              <a href="#">Design surveys</a>
+            <a href="#">Prototype testing</a>
+            <a href="#">First click tests</a>
+            <a href="#">Preference tests</a>
+            <a href="#">Five second tests</a>
+            <a href="#">Design surveys</a>
           </div>
 
           <div className="footer-heading-list flex">
-              <h3>Resources</h3>
+            <h3>Resources</h3>
 
-              <a href="#">Blog</a>
-              <a href="#">Testing guides</a>
-              <a href="#">Help center</a>
-              <a href="#">Contact</a>
-              <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">Testing guides</a>
+            <a href="#">Help center</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
           </div>
         </div>
       </footer>
@@ -373,10 +371,10 @@ function App() {
           </div>
 
           <div className="social-media flex">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i className="fa-brands fa-facebook"></i></a>
+            <a href="#"><i className="fa-brands fa-twitter"></i></a>
+            <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i className="fa-brands fa-youtube"></i></a>
           </div>
 
           <div className="copyright">

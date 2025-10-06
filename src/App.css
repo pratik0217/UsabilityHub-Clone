@@ -67,8 +67,12 @@ a {
   justify-content: space-between;
 }
 
+.company-logo img {
+  width: 40%;
+}
+
 .navlinks {
-  flex-basis: 647px;
+  flex-basis: 800px;
 }
 
 .active-link {
@@ -82,7 +86,7 @@ a {
 
 nav {
   justify-content: end;
-  gap: 30px;
+  gap: 20px;
 }
 
 .primary-btn {
