@@ -407,6 +407,7 @@ footer {
 .terms {
   gap: 20px;
   font-size: 15px;
+  flex-wrap: wrap;
 }
 
 .terms a:hover {

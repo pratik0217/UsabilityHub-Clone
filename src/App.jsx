@@ -37,7 +37,6 @@ import PageNotFound from './components/PageNotFound'
 
 
 function App() {
-  const alertMessage = alert("Does't work it clicked Click.")
   return (
     <>
       {/* Top Banner Section  */}
@@ -46,7 +45,7 @@ function App() {
       </div>
 
       <Routes>
-        <Route path='/' element={<Navbar alertPop={alertMessage} logo={websiteLogo} />}>
+        <Route path='/' element={<Navbar logo={websiteLogo} />}>
           <Route path='/product' element={<Product />} />
           <Route path='/customers' element={<Customers />} />
           <Route path='/pricing' element={<Pricing />} />

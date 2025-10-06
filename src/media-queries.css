@@ -1,3 +1,4 @@
+/* Tablet Version */
 @media screen and (max-width: 991px) {
   .navlinks {
     display: none;
@@ -81,5 +82,139 @@
 
   .footer-container {
     justify-content: space-evenly;
+  }
+}
+
+/* Large Mobile Devices */
+@media screen and (max-width: 767px) {
+  #features-section {
+    background-position: bottom;
+    background-size: contain;
+  }
+  .features-heading {
+    margin-bottom: 40px;
+  }
+  .big-features-container {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer-container img{
+    width: 50%;
+  }
+
+  .footer-heading-list {
+    align-items: center;
+  }
+
+  .subfooter {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .nav-toggle {
+    font-size: 1.8rem;
+  }
+  .left-header h1 {
+    font-size: 2rem;
+  }
+
+  .left-header p {
+    font-size: 1rem;
+  }
+
+  .left-header a {
+    width: 100%;
+  }
+
+  .companies-section {
+    margin-top: 1px;
+  }
+
+  #features-section {
+    background-image: none;
+  } 
+
+  .features-heading h2{
+    font-size: 1.3rem;
+  }
+
+  .features-heading a{
+    width: 70%;
+  }
+
+  .features-area {
+  height: 100%;
+  }
+
+  .features-card {
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 40px;
+  }
+
+  .features-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .features-card p {
+    font-size: 1.25rem;
+  }
+
+  .example-area {
+    gap: 10px;
+  }
+
+  .example-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cta-section-container {
+    gap: 1px;
+  }
+
+  .cta-description {
+    gap: 15px;
+  }
+
+  .cta-img img {
+    width: 100%;
+  }
+
+  .cta-descr-lists {
+    flex-direction: column;
+    gap: 1px;
+    align-items: flex-start;
+  }
+
+  .cta-buttom-section {
+    flex-direction: column;
+  }
+
+  .cta-panel-container {
+    gap: 10px;
+  }
+
+  .cta-panel-container p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .cta-panel-container a {
+    width: 40%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .terms {
+    flex-direction: column;
   }
 }
