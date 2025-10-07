@@ -3,7 +3,6 @@ import { NavLink } from "react-router"
 
 export default function Navbar(props) {
     const toggleButtom = document.getElementById("navlinks-toggle");
-    // const navlinksToggle = document.getElementById("navlinks-toggle");
 
     const navToggleButtom = () => {
         toggleButtom.classList.toggle("active-navToggle");
