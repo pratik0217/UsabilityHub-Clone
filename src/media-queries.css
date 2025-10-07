@@ -11,9 +11,10 @@
     width: 100%;
     background-color: #ffffff;
     padding-block: 20px;
+    transition: 0.5s ease-out;
   }
 
-  .navlinks:hover {
+  .active-navToggle {
     left: 0;
   }
 
