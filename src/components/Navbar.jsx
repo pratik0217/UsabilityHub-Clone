@@ -2,9 +2,8 @@ import { useState } from "react"
 import { NavLink } from "react-router"
 
 export default function Navbar(props) {
-    const toggleButtom = document.getElementById("navlinks-toggle");
-
     const navToggleButtom = () => {
+        const toggleButtom = document.querySelector("#navlinks-toggle");
         toggleButtom.classList.toggle("active-navToggle");
     }
     return (
