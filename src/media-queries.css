@@ -94,6 +94,10 @@
     flex-direction: column;
   }
 
+  .cta-img:hover {
+  transform: none;
+}
+
   .cta-description {
     align-items: center;
   }
