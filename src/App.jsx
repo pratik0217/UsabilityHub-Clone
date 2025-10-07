@@ -60,7 +60,7 @@ function App() {
       <header>
         <div className="container header-section flex">
           <div className="left-header">
-            <h1>Design confidently.</h1>
+            <h1 id='heading-text'>Design confidently.</h1>
             <p>UsabilityHub is a remote user research platform that takes the guesswork out of design decisions by validating them with real users.</p>
 
             <a className='primary-btn get-started-btn'>Getting Started</a>

@@ -68,6 +68,10 @@
   margin: 30px;
 }
 
+.big-features-container:hover {
+  transform: none;
+}
+
 .example-heading-container {
     margin-bottom: 50px;
 }
@@ -75,6 +79,11 @@
   .example-area {
     gap: 10px;
   }
+
+  .example-card:hover {
+  transform: none;
+  transition: none;
+}
 
   .example-card {
     width: calc(50% - 10px);

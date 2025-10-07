@@ -132,6 +132,20 @@ header {
   width: 50vw;
 }
 
+@keyframes typewritten {
+  from {
+    width: 0%;
+  }
+}
+
+#heading-text{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewritten 3s steps(20);
+  animation-iteration-count: infinite;
+}
+
 .left-header p {
   margin-top: 20px;
 }
@@ -210,6 +224,11 @@ header {
   width: 60px;
 }
 
+.features-card:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+
 /* Big features section */
 #big-features {
   padding: 30px;
@@ -218,6 +237,11 @@ header {
 .big-features-container {
   gap: 70px;
   margin-top: 50px;
+  transition-duration: 2s;
+}
+
+.big-features-container:hover {
+  transform: scale(1.1);
 }
 
 .features-img img {
@@ -304,6 +328,8 @@ header {
 
 .example-card:hover {
   box-shadow: 5px 5px 10px #888;
+  transform: scale(1.1);
+  transition: 2s;
 }
 
 /* CTA Section */
@@ -316,8 +342,16 @@ header {
   padding-block: 75px;
 }
 
+.cta-img {
+  transition-duration: 2s;
+}
+
 .cta-img img {
   width: 550px;
+}
+
+.cta-img:hover {
+  transform: scale(1.2);
 }
 
 .cta-description {
